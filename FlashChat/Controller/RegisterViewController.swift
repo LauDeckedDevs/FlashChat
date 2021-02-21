@@ -6,16 +6,17 @@
 //
 
 import UIKit
+import Firebase
 
 
 class RegisterViewController: UIViewController {
 
+    //MARK: - Properties
     
-    //Pre-linked IBOutlets
-
     @IBOutlet var emailTextfield: UITextField!
     @IBOutlet var passwordTextfield: UITextField!
     
+    //MARK: - View
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,19 +26,16 @@ class RegisterViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-
+    //MARK: - RegistrationProcess
   
     @IBAction func registerPressed(_ sender: AnyObject) {
-        
-
-        
-        //TODO: Set up a new user on our Firbase database
-        
-        
-
-        
-        
-    } 
-    
-    
+        Auth.auth().createUser(withEmail: emailTextfield.text!, password: passwordTextfield.text!) { (user, error) in
+            if error != nil {
+                print(error!)
+            } else {
+                print("Registration succesful!")
+                self.performSegue(withIdentifier: "goToChat", sender: self)
+            }
+        }
+    }
 }
