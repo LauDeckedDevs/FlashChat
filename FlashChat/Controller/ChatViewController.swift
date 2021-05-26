@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 
-class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
     //MARK: -Properties
 
@@ -25,11 +25,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         messageTableView.delegate = self
         messageTableView.dataSource = self
-        
-        
-        //TODO: Set yourself as the delegate of the text field here:
-
-        
+        messageTextfield.delegate = self
         
         //TODO: Set the tapGesture here:
         
@@ -47,6 +43,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         let messageArray = ["Welcome", "To", "Flashchat"]
             
         cell.messageBody.text = messageArray[indexPath.row]
+        
         return cell
     }
    
@@ -62,21 +59,20 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         messageTableView.estimatedRowHeight = 120.0
     }
     
-    //MARK:- TextFieldDelegate
+    //MARK: - textFieldDidBegin
     
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        heightConstraint.constant = 372
+        view.layoutIfNeeded()
+    }
     
+    //MARK: - textFieldDidEnd
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        print("wohh")
+    }
 
-    
-    //TODO: Declare textFieldDidBeginEditing here:
-    
-    
-    
-    //TODO: Declare textFieldDidEndEditing here:
-    
 
-    
-    
-    
     //MARK: - Send&RecieveFirebase
     
     
