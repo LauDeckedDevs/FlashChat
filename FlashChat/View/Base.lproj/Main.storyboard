@@ -172,25 +172,6 @@
             </objects>
             <point key="canvasLocation" x="1085.5999999999999" y="367.24137931034483"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="klt-BA-sOx">
-            <objects>
-                <navigationController id="w8g-Ht-bgA" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="gEV-2E-bbV">
-                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="xYK-ej-9R9" kind="relationship" relationship="rootViewController" id="N1L-2A-3jf"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9MQ-K9-hhB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="932" y="-417"/>
-        </scene>
         <!--Log In-->
         <scene sceneID="Ku8-Lc-W7f">
             <objects>
@@ -280,7 +261,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ewD-vV-GoZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1085.5999999999999" y="-416.74876847290642"/>
+            <point key="canvasLocation" x="932" y="-423"/>
         </scene>
         <!--Flash Chat-->
         <scene sceneID="ufC-wZ-h7g">
@@ -399,7 +380,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="rRW-Qd-PQi"/>
-        <segue reference="N1L-2A-3jf"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="background-1" width="1184" height="2778"/>

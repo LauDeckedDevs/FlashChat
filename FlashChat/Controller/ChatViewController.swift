@@ -27,10 +27,9 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         messageTableView.dataSource = self
         messageTextfield.delegate = self
         
-        //TODO: Set the tapGesture here:
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tableViewTapped))
+        messageTableView.addGestureRecognizer(tapGesture)
         
-        
-
         messageTableView.register(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: "customMessageCell")
         configureTableView()
     }
@@ -52,7 +51,13 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     
-    //TODO: Declare tableViewTapped here:
+    //MARK: - tableViewTapped
+    
+    @objc func tableViewTapped() {
+        messageTextfield.endEditing(true)
+    }
+    
+    //MARK: - ConfigureTableView
 
     func configureTableView() {
         messageTableView.rowHeight = UITableView.automaticDimension
@@ -62,14 +67,19 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     //MARK: - textFieldDidBegin
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        heightConstraint.constant = 372
-        view.layoutIfNeeded()
+        UIView.animate(withDuration: 0.5){
+            self.heightConstraint.constant = 372
+            self.view.layoutIfNeeded()
+        }
     }
     
     //MARK: - textFieldDidEnd
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        print("wohh")
+        UIView.animate(withDuration: 0.5){
+            self.heightConstraint.constant = 34
+            self.view.layoutIfNeeded()
+        }
     }
 
 
@@ -80,11 +90,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     @IBAction func sendPressed(_ sender: AnyObject) {
-        
-        
-        //TODO: Send the message to Firebase and save it in our database
-        
-        
+        messageTextfield.endEditing(true)
     }
     
     //TODO: Create the retrieveMessages method here:
