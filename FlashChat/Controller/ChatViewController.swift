@@ -68,7 +68,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         UIView.animate(withDuration: 0.5){
-            self.heightConstraint.constant = 372
+            self.heightConstraint.constant = 360
             self.view.layoutIfNeeded()
         }
     }
@@ -77,7 +77,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         UIView.animate(withDuration: 0.5){
-            self.heightConstraint.constant = 34
+            self.heightConstraint.constant = 50
             self.view.layoutIfNeeded()
         }
     }
