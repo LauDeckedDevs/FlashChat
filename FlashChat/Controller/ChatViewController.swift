@@ -107,13 +107,6 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
                 self.sendButton.isEnabled = true
                 self.sendButton.isHidden = false
                 self.messageTextfield.text = ""
-                
-                let alert = UIAlertController(
-                                      title: "Message Sent",
-                                      message: "your Message has been sent successfully",
-                                      preferredStyle: UIAlertController.Style.alert
-                                    )
-                self.present(alert, animated: true, completion: nil)
             }
         }
     }
