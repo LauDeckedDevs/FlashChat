@@ -34,15 +34,19 @@ class LogInViewController: UIViewController {
             if error != nil {
                 let alertFailed = UIAlertController(title: "Login", message: "Login failed, try again later", preferredStyle: UIAlertController.Style.alert)
                 self.present(alertFailed, animated: true, completion: nil)
+                let when = DispatchTime.now() + 1
+                DispatchQueue.main.asyncAfter(deadline: when){
+                  alertFailed.dismiss(animated: true, completion: nil)
+                }
             } else {
                 let alertSuccessful = UIAlertController(title: "Login", message: "Login sucessfully", preferredStyle: UIAlertController.Style.alert)
                 self.present(alertSuccessful, animated: true, completion: nil)
-                self.performSegue(withIdentifier: "goToChat", sender: self)
+                let when = DispatchTime.now() + 0.5
+                DispatchQueue.main.asyncAfter(deadline: when){
+                  alertSuccessful.dismiss(animated: true, completion: nil)
+                    self.performSegue(withIdentifier: "goToChat", sender: self)
+                }
             }
         }
     }
-    
-
-
-    
 }  
