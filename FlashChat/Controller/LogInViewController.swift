@@ -32,9 +32,11 @@ class LogInViewController: UIViewController {
     @IBAction func logInPressed(_ sender: AnyObject) {
         Auth.auth().signIn(withEmail: emailTextfield.text!, password: passwordTextfield.text!) { (use, error) in
             if error != nil {
-                print(error ?? "error")
+                let alertFailed = UIAlertController(title: "Login", message: "Login failed, try again later", preferredStyle: UIAlertController.Style.alert)
+                self.present(alertFailed, animated: true, completion: nil)
             } else {
-                print("login succesful")
+                let alertSuccessful = UIAlertController(title: "Login", message: "Login sucessfully", preferredStyle: UIAlertController.Style.alert)
+                self.present(alertSuccessful, animated: true, completion: nil)
                 self.performSegue(withIdentifier: "goToChat", sender: self)
             }
         }
