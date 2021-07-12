@@ -12,7 +12,7 @@ import Firebase
 
 class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
-    //MARK: -Properties
+    //MARK: - Properties
     
     var messageArray: [Message] = [Message]()
 
@@ -21,7 +21,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var messageTextfield: UITextField!
     @IBOutlet var messageTableView: UITableView!
     
-    
+    //MARK: - View
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -112,6 +112,8 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
         }
     }
+    
+    //MARK: - RecieveMessages
     
     func retrieveMessages() {
         let messageDB = Database.database().reference().child("Messages")
