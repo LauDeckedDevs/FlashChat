@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="8Ny-HH-lhf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="8Ny-HH-lhf">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -231,6 +232,14 @@
                                     <action selector="logInPressed:" destination="xYK-ej-9R9" eventType="touchUpInside" id="Llx-K4-fZc"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nlh-ud-Kh5" customClass="GIDSignInButton">
+                                <rect key="frame" x="122" y="459" width="131" height="58"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="Dgk-bm-Rf5"/>
+                                    <constraint firstAttribute="width" constant="131" id="mH6-6o-9jn"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -239,10 +248,13 @@
                             <constraint firstAttribute="bottomMargin" secondItem="zUg-sM-rpA" secondAttribute="bottom" constant="8" id="JRJ-4U-0qx"/>
                             <constraint firstItem="OD6-NY-DlK" firstAttribute="centerX" secondItem="b1r-c3-eoq" secondAttribute="centerX" id="Nl4-AA-AM0"/>
                             <constraint firstItem="OD6-NY-DlK" firstAttribute="leading" secondItem="ZWF-xv-G1L" secondAttribute="leading" id="QTq-6l-wmW"/>
+                            <constraint firstItem="Nlh-ud-Kh5" firstAttribute="top" secondItem="OD6-NY-DlK" secondAttribute="bottom" constant="8" id="ThV-uw-KGT"/>
                             <constraint firstItem="zUg-sM-rpA" firstAttribute="centerX" secondItem="b1r-c3-eoq" secondAttribute="centerX" id="WBk-dZ-twl"/>
                             <constraint firstItem="zuQ-XP-4Q7" firstAttribute="centerX" secondItem="b1r-c3-eoq" secondAttribute="centerX" id="WGW-4D-pWV"/>
+                            <constraint firstItem="zUg-sM-rpA" firstAttribute="top" secondItem="Nlh-ud-Kh5" secondAttribute="bottom" constant="144" id="XKg-ud-bNB"/>
                             <constraint firstItem="zuQ-XP-4Q7" firstAttribute="top" secondItem="ZWF-xv-G1L" secondAttribute="bottom" constant="8" symbolic="YES" id="bC3-56-IOv"/>
                             <constraint firstItem="zuQ-XP-4Q7" firstAttribute="leading" secondItem="ZWF-xv-G1L" secondAttribute="leading" id="hPd-Jf-qgb"/>
+                            <constraint firstItem="Nlh-ud-Kh5" firstAttribute="centerX" secondItem="b1r-c3-eoq" secondAttribute="centerX" id="kFq-jl-mGd"/>
                             <constraint firstItem="zUg-sM-rpA" firstAttribute="top" secondItem="OD6-NY-DlK" secondAttribute="bottom" constant="210" id="owf-xc-oV8"/>
                             <constraint firstItem="ZWF-xv-G1L" firstAttribute="centerX" secondItem="b1r-c3-eoq" secondAttribute="centerX" id="pbx-Ud-iKa"/>
                             <constraint firstItem="ZWF-xv-G1L" firstAttribute="top" secondItem="fxq-LK-1OE" secondAttribute="bottom" constant="199" id="qm6-P6-0vT"/>
@@ -378,5 +390,8 @@
         <image name="background-1" width="1184" height="2778"/>
         <image name="logo" width="703" height="720"/>
         <image name="rectangle.and.pencil.and.ellipsis" catalog="system" width="128" height="81"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
