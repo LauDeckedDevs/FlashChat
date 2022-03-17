@@ -15,6 +15,7 @@ class LogInViewController: UIViewController {
 
     //MARK: - Properties
     
+    @IBOutlet weak var signInButton: GIDSignInButton!
     @IBOutlet var emailTextfield: UITextField!
     @IBOutlet var passwordTextfield: UITextField!
     

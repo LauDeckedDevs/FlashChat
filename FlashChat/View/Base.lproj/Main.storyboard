@@ -269,6 +269,7 @@
                     <connections>
                         <outlet property="emailTextfield" destination="ZWF-xv-G1L" id="A9I-P9-2rL"/>
                         <outlet property="passwordTextfield" destination="zuQ-XP-4Q7" id="FBf-fZ-iYp"/>
+                        <outlet property="signInButton" destination="Nlh-ud-Kh5" id="sud-lj-Pyi"/>
                         <segue destination="vXZ-lx-hvc" kind="push" identifier="goToChat" id="rRW-Qd-PQi"/>
                     </connections>
                 </viewController>
