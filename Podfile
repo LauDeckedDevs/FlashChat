@@ -12,7 +12,6 @@ target 'FlashChat' do
     pod 'Firebase/Database'
     pod 'SVProgressHUD'
     pod 'ChameleonFramework'
-    pod 'GoogleSignIn'
 
 end
 
