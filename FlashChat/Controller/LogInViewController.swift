@@ -9,7 +9,8 @@ import UIKit
 import Firebase
 import SVProgressHUD
 import GoogleSignIn
-
+import MaterialComponents.MaterialTextControls_OutlinedTextAreas
+import MaterialComponents.MaterialTextControls_OutlinedTextFields
 
 class LogInViewController: UIViewController {
 
