@@ -24,6 +24,12 @@ class LogInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let estimatedFrame = CGRect(x: 180, y: 35, width: 200, height: 7)
+        let textField = MDCOutlinedTextField(frame: estimatedFrame)
+        textField.label.text = "Email"
+        textField.placeholder = "example@flashchat.com"
+        textField.sizeToFit()
+        view.addSubview(textField)
     }
 
     override func didReceiveMemoryWarning() {
