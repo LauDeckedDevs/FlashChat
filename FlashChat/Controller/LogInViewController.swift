@@ -23,7 +23,6 @@ class LogInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,7 +36,7 @@ class LogInViewController: UIViewController {
         SVProgressHUD.show()
         self.view.endEditing(true)
         
-        Auth.auth().signIn(withEmail: emailTextfield.text!, password: passwordTextfield.text!) { (use, error) in
+        Auth.auth().signIn(withEmail: emailTextfield.text!, password: passwordTextfield.text!) { (use, error) in 
             if error != nil {
                 let alertFailed = UIAlertController(title: "Login", message: "Login failed, try again later", preferredStyle: UIAlertController.Style.alert)
                 SVProgressHUD.dismiss()
