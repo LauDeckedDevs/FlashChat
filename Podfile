@@ -13,6 +13,9 @@ target 'FlashChat' do
     pod 'SVProgressHUD'
     pod 'ChameleonFramework'
     pod 'GoogleSignIn'
+    pod 'MaterialComponents/TextControls+OutlinedTextAreas'
+    pod 'MaterialComponents/TextControls+OutlinedTextFields'
+    pod 'MaterialComponents/TextControls+OutlinedTextFieldsTheming'
 
 end
 
