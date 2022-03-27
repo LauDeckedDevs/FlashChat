@@ -15,6 +15,7 @@ target 'FlashChat' do
     pod 'GoogleSignIn'
     pod 'MaterialComponents/TextControls+OutlinedTextAreas'
     pod 'MaterialComponents/TextControls+OutlinedTextFields'
+    pod 'MaterialComponents/TextControls+OutlinedTextFieldsTheming'
 
 end
 

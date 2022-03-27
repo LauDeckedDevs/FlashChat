@@ -91,6 +91,9 @@ PODS:
   - leveldb-library (1.22)
   - MaterialComponents/AnimationTiming (124.2.0)
   - MaterialComponents/Availability (124.2.0)
+  - MaterialComponents/private/Application (124.2.0)
+  - MaterialComponents/private/Color (124.2.0):
+    - MaterialComponents/Availability
   - MaterialComponents/private/Math (124.2.0)
   - "MaterialComponents/private/TextControlsPrivate+BaseStyle (124.2.0)":
     - MaterialComponents/AnimationTiming
@@ -108,6 +111,32 @@ PODS:
   - "MaterialComponents/private/TextControlsPrivate+TextFields (124.2.0)":
     - MaterialComponents/private/Math
     - "MaterialComponents/private/TextControlsPrivate+Shared"
+  - MaterialComponents/schemes/Color (124.2.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+  - MaterialComponents/schemes/Container (124.2.0):
+    - MaterialComponents/schemes/Color
+    - MaterialComponents/schemes/Shape
+    - MaterialComponents/schemes/Typography
+  - MaterialComponents/schemes/Shape (124.2.0):
+    - MaterialComponents/ShapeLibrary
+    - MaterialComponents/Shapes
+  - MaterialComponents/schemes/Typography (124.2.0):
+    - "MaterialComponents/schemes/Typography+BasicFontScheme"
+    - "MaterialComponents/schemes/Typography+Scheming"
+    - MaterialComponents/Typography
+  - "MaterialComponents/schemes/Typography+BasicFontScheme (124.2.0)"
+  - "MaterialComponents/schemes/Typography+Scheming (124.2.0)"
+  - MaterialComponents/ShadowElevations (124.2.0)
+  - MaterialComponents/ShadowLayer (124.2.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/ShapeLibrary (124.2.0):
+    - MaterialComponents/private/Math
+    - MaterialComponents/Shapes
+  - MaterialComponents/Shapes (124.2.0):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
   - "MaterialComponents/TextControls+BaseTextAreas (124.2.0)":
     - "MaterialComponents/private/TextControlsPrivate+BaseStyle"
     - "MaterialComponents/private/TextControlsPrivate+Shared"
@@ -126,7 +155,15 @@ PODS:
     - MaterialComponents/Availability
     - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle"
     - "MaterialComponents/TextControls+BaseTextFields"
+  - "MaterialComponents/TextControls+OutlinedTextFieldsTheming (124.2.0)":
+    - MaterialComponents/schemes/Container
+    - "MaterialComponents/TextControls+OutlinedTextFields"
+  - MaterialComponents/Typography (124.2.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+    - MDFTextAccessibility
   - MDFInternationalization (3.0.0)
+  - MDFTextAccessibility (2.0.1)
   - nanopb (2.30906.0):
     - nanopb/decode (= 2.30906.0)
     - nanopb/encode (= 2.30906.0)
@@ -144,6 +181,7 @@ DEPENDENCIES:
   - GoogleSignIn
   - "MaterialComponents/TextControls+OutlinedTextAreas"
   - "MaterialComponents/TextControls+OutlinedTextFields"
+  - "MaterialComponents/TextControls+OutlinedTextFieldsTheming"
   - SVProgressHUD
 
 SPEC REPOS:
@@ -166,6 +204,7 @@ SPEC REPOS:
     - leveldb-library
     - MaterialComponents
     - MDFInternationalization
+    - MDFTextAccessibility
     - nanopb
     - PromisesObjC
     - SVProgressHUD
@@ -189,10 +228,11 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
   MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
+  MDFTextAccessibility: f4bb4cc2194286651b59a215fdeaa0e05dc90ba5
   nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 7a9bee0532d9c106526a488ecc37d4ae05933426
+PODFILE CHECKSUM: 10ecb3aca852661e7d67b1dad8b330e4416e1e4b
 
 COCOAPODS: 1.10.0
