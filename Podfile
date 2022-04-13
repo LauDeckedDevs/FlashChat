@@ -6,8 +6,8 @@ target 'FlashChat' do
   use_frameworks!
 
   # Pods for FlashChat
-    pod 'Firebase/Analytics'
     pod 'Firebase'
+    pod 'Firebase/Analytics'
     pod 'Firebase/Auth'
     pod 'Firebase/Database'
     pod 'SVProgressHUD'
