@@ -3,43 +3,43 @@
 "67C-Ey-AV3.normalTitle" = "Registrar-se";
 
 /* Class = "UINavigationItem"; title = "Log In"; ObjectID = "GCy-uw-FP0"; */
-"GCy-uw-FP0.title" = "Accedir";
+"GCy-uw-FP0.title" = "Inici de Sessió";
 
 /* Class = "UINavigationItem"; title = "Register"; ObjectID = "IBw-Pb-pcT"; */
 "IBw-Pb-pcT.title" = "Registre";
 
 /* Class = "UIButton"; normalTitle = "Send"; ObjectID = "JiI-fB-I1v"; */
-"JiI-fB-I1v.normalTitle" = "Send";
+"JiI-fB-I1v.normalTitle" = "Enviar";
 
 /* Class = "UITextField"; placeholder = "Email"; ObjectID = "M1R-HS-xgc"; */
-"M1R-HS-xgc.placeholder" = "Email";
+"M1R-HS-xgc.placeholder" = "Correu electronic";
 
 /* Class = "UIButton"; normalTitle = "Log In"; ObjectID = "OD6-NY-DlK"; */
-"OD6-NY-DlK.normalTitle" = "Log In";
+"OD6-NY-DlK.normalTitle" = "Accedir";
 
 /* Class = "UINavigationItem"; title = "Flash Chat"; ObjectID = "OGj-fw-WBv"; */
 "OGj-fw-WBv.title" = "Flash Chat";
 
 /* Class = "UITextField"; placeholder = "Password"; ObjectID = "SYb-Xx-USU"; */
-"SYb-Xx-USU.placeholder" = "Password";
+"SYb-Xx-USU.placeholder" = "Contrasenya";
 
 /* Class = "UITextField"; placeholder = "Enter Your Message"; ObjectID = "W4K-YF-skl"; */
-"W4K-YF-skl.placeholder" = "Enter Your Message";
+"W4K-YF-skl.placeholder" = "El teu missatge va aqui";
 
 /* Class = "UITextField"; placeholder = "Email"; ObjectID = "ZWF-xv-G1L"; */
-"ZWF-xv-G1L.placeholder" = "Email";
+"ZWF-xv-G1L.placeholder" = "Correu electronic";
 
 /* Class = "UIBarButtonItem"; title = "Log Out"; ObjectID = "mz9-8w-6zi"; */
-"mz9-8w-6zi.title" = "Log Out";
+"mz9-8w-6zi.title" = "Tancar Sessió";
 
 /* Class = "UINavigationItem"; title = "Welcome"; ObjectID = "qIL-hP-GCy"; */
-"qIL-hP-GCy.title" = "Welcome";
+"qIL-hP-GCy.title" = "Benvingut/da";
 
 /* Class = "UIButton"; normalTitle = "Log In"; ObjectID = "rV4-Sa-2Rb"; */
-"rV4-Sa-2Rb.normalTitle" = "Log In";
+"rV4-Sa-2Rb.normalTitle" = "Accedir";
 
 /* Class = "UIButton"; normalTitle = "Register"; ObjectID = "uWY-w2-6La"; */
-"uWY-w2-6La.normalTitle" = "Register";
+"uWY-w2-6La.normalTitle" = "Registrar-se";
 
 /* Class = "UITextField"; placeholder = "Password"; ObjectID = "zuQ-XP-4Q7"; */
-"zuQ-XP-4Q7.placeholder" = "Password";
+"zuQ-XP-4Q7.placeholder" = "Contrasenya";
