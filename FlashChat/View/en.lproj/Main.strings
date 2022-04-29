@@ -1,0 +1,45 @@
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "67C-Ey-AV3"; */
+"67C-Ey-AV3.normalTitle" = "Register";
+
+/* Class = "UINavigationItem"; title = "Log In"; ObjectID = "GCy-uw-FP0"; */
+"GCy-uw-FP0.title" = "Log In";
+
+/* Class = "UINavigationItem"; title = "Register"; ObjectID = "IBw-Pb-pcT"; */
+"IBw-Pb-pcT.title" = "Register";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "JiI-fB-I1v"; */
+"JiI-fB-I1v.normalTitle" = "Send";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "M1R-HS-xgc"; */
+"M1R-HS-xgc.placeholder" = "Email";
+
+/* Class = "UIButton"; normalTitle = "Log In"; ObjectID = "OD6-NY-DlK"; */
+"OD6-NY-DlK.normalTitle" = "Log In";
+
+/* Class = "UINavigationItem"; title = "Flash Chat"; ObjectID = "OGj-fw-WBv"; */
+"OGj-fw-WBv.title" = "Flash Chat";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "SYb-Xx-USU"; */
+"SYb-Xx-USU.placeholder" = "Password";
+
+/* Class = "UITextField"; placeholder = "Enter Your Message"; ObjectID = "W4K-YF-skl"; */
+"W4K-YF-skl.placeholder" = "Enter Your Message";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "ZWF-xv-G1L"; */
+"ZWF-xv-G1L.placeholder" = "Email";
+
+/* Class = "UIBarButtonItem"; title = "Log Out"; ObjectID = "mz9-8w-6zi"; */
+"mz9-8w-6zi.title" = "Log Out";
+
+/* Class = "UINavigationItem"; title = "Welcome"; ObjectID = "qIL-hP-GCy"; */
+"qIL-hP-GCy.title" = "Welcome";
+
+/* Class = "UIButton"; normalTitle = "Log In"; ObjectID = "rV4-Sa-2Rb"; */
+"rV4-Sa-2Rb.normalTitle" = "Log In";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "uWY-w2-6La"; */
+"uWY-w2-6La.normalTitle" = "Register";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "zuQ-XP-4Q7"; */
+"zuQ-XP-4Q7.placeholder" = "Password";
