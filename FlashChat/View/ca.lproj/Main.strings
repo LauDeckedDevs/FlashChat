@@ -1,12 +1,12 @@
 
 /* Class = "UIButton"; normalTitle = "Register"; ObjectID = "67C-Ey-AV3"; */
-"67C-Ey-AV3.normalTitle" = "Register";
+"67C-Ey-AV3.normalTitle" = "Registrar-se";
 
 /* Class = "UINavigationItem"; title = "Log In"; ObjectID = "GCy-uw-FP0"; */
-"GCy-uw-FP0.title" = "Log In";
+"GCy-uw-FP0.title" = "Accedir";
 
 /* Class = "UINavigationItem"; title = "Register"; ObjectID = "IBw-Pb-pcT"; */
-"IBw-Pb-pcT.title" = "Register";
+"IBw-Pb-pcT.title" = "Registre";
 
 /* Class = "UIButton"; normalTitle = "Send"; ObjectID = "JiI-fB-I1v"; */
 "JiI-fB-I1v.normalTitle" = "Send";

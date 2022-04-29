@@ -3,10 +3,10 @@
 "67C-Ey-AV3.normalTitle" = "Registrarse";
 
 /* Class = "UINavigationItem"; title = "Log In"; ObjectID = "GCy-uw-FP0"; */
-"GCy-uw-FP0.title" = "Iniciar Sesión";
+"GCy-uw-FP0.title" = "Inicio Sesion";
 
 /* Class = "UINavigationItem"; title = "Register"; ObjectID = "IBw-Pb-pcT"; */
-"IBw-Pb-pcT.title" = "Registrarse";
+"IBw-Pb-pcT.title" = "Registraro";
 
 /* Class = "UIButton"; normalTitle = "Send"; ObjectID = "JiI-fB-I1v"; */
 "JiI-fB-I1v.normalTitle" = "Enviar";
