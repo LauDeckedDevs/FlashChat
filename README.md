@@ -1,5 +1,5 @@
 # What is flashchat?
-Flahschat is a group chat app built with Swift 5 in Uikit and using firebase.
+Flahschat is an iOS native group chat app built with Swift 5 in Uikit and using firebase.
 
 # Last Update!
 29/04/2022: Translating and adapting to Spanish and Catalan
