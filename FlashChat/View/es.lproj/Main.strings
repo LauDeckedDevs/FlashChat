@@ -6,7 +6,7 @@
 "GCy-uw-FP0.title" = "Inicio Sesion";
 
 /* Class = "UINavigationItem"; title = "Register"; ObjectID = "IBw-Pb-pcT"; */
-"IBw-Pb-pcT.title" = "Registraro";
+"IBw-Pb-pcT.title" = "Registro";
 
 /* Class = "UIButton"; normalTitle = "Send"; ObjectID = "JiI-fB-I1v"; */
 "JiI-fB-I1v.normalTitle" = "Enviar";
