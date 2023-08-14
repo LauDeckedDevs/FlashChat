@@ -206,7 +206,6 @@
                                             <constraint firstAttribute="height" constant="34" id="Tuv-sz-28x"/>
                                             <constraint firstAttribute="width" constant="343" id="vcH-Us-Nrg"/>
                                         </constraints>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -382,7 +381,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mOy-cb-hAN"/>
+        <segue reference="rRW-Qd-PQi"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="background-1" width="1184" height="2778"/>
