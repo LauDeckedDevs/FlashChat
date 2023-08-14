@@ -1817,7 +1817,7 @@
 		06A15249125DB06A5BC37408E1A62E32 /* FChildChangeAccumulator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FChildChangeAccumulator.m; path = FirebaseDatabase/Sources/Core/View/Filter/FChildChangeAccumulator.m; sourceTree = "<group>"; };
 		06A9A072211FFB1D7DD6B271C86C62F9 /* arena.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = arena.cc; path = util/arena.cc; sourceTree = "<group>"; };
 		06B2301D23859AC2D4A1D4B8C5B19754 /* OIDExternalUserAgentSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentSession.h; path = Source/AppAuthCore/OIDExternalUserAgentSession.h; sourceTree = "<group>"; };
-		06FC5C9CF96D60C50FCD47D339C91951 /* nanopb */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = nanopb; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06FC5C9CF96D60C50FCD47D339C91951 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07195FCBFF74FB4F4B3B6ED476B767D4 /* FIRAuthInternalErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAuthInternalErrors.h; path = FirebaseAuth/Sources/Utilities/FIRAuthInternalErrors.h; sourceTree = "<group>"; };
 		075D5076C313E63893EBFFB0958F968B /* GULMutableDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULMutableDictionary.h; path = GoogleUtilities/Network/Public/GoogleUtilities/GULMutableDictionary.h; sourceTree = "<group>"; };
 		07BA70B7C5AAB5997B64E484E3E9D63A /* HeartbeatStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeartbeatStorage.swift; path = FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatStorage.swift; sourceTree = "<group>"; };
@@ -3731,7 +3731,7 @@
 				A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents */,
 				9A2AC0B8BAC6EF061EBC28825653DF99 /* MDFInternationalization */,
 				FB8220FA4D9117310AEFC629A6EE4A08 /* MDFTextAccessibility.framework */,
-				06FC5C9CF96D60C50FCD47D339C91951 /* nanopb */,
+				06FC5C9CF96D60C50FCD47D339C91951 /* nanopb.framework */,
 				DF59A22D5B98B840E45A21198019912B /* Pods-FlashChat */,
 				3347A1AB6546F0A3977529B8F199DC41 /* PromisesObjC */,
 				E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD.framework */,
@@ -6845,7 +6845,7 @@
 			);
 			name = nanopb;
 			productName = nanopb;
-			productReference = 06FC5C9CF96D60C50FCD47D339C91951 /* nanopb */;
+			productReference = 06FC5C9CF96D60C50FCD47D339C91951 /* nanopb.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D676E21115185671D7258A56944ABE98 /* GTMSessionFetcher */ = {
@@ -8365,7 +8365,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/nanopb/nanopb-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/nanopb/nanopb-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -8435,7 +8435,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/nanopb/nanopb-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/nanopb/nanopb-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
