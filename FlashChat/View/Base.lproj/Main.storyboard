@@ -273,7 +273,7 @@
             </objects>
             <point key="canvasLocation" x="932" y="-423.39901477832512"/>
         </scene>
-        <!--Flash Chat-->
+        <!--Chat View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController storyboardIdentifier="chatVC" id="vXZ-lx-hvc" customClass="ChatViewController" customModule="FlashChat" customModuleProvider="target" sceneMemberID="viewController">
@@ -318,7 +318,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="7eI-kw-TVm" userLabel="Message Table View">
-                                <rect key="frame" x="0.0" y="94" width="375" height="634"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="640"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <sections/>
                             </tableView>
@@ -326,7 +326,6 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="WpY-IA-acB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="893-Zp-giU"/>
-                            <constraint firstItem="7eI-kw-TVm" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="AAq-UW-DJb"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="WpY-IA-acB" secondAttribute="bottom" id="DDc-aL-BrB"/>
                             <constraint firstItem="7eI-kw-TVm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Hlv-uC-xq8"/>
                             <constraint firstItem="7eI-kw-TVm" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="88" id="LJf-Y7-CeM"/>
@@ -335,7 +334,8 @@
                             <constraint firstAttribute="trailing" secondItem="7eI-kw-TVm" secondAttribute="trailing" id="z26-fa-Hmy"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Flash Chat" id="OGj-fw-WBv">
+                    <navigationItem key="navigationItem" id="OGj-fw-WBv">
+                        <barButtonItem key="backBarButtonItem" title=" " id="XDA-WC-eS9"/>
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="mz9-8w-6zi">
                             <connections>
                                 <action selector="logOutPressed:" destination="vXZ-lx-hvc" id="AiZ-zI-Rgo"/>
