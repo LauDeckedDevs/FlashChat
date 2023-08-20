@@ -50,6 +50,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
+                <color key="backgroundColor" name="Dark mode"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="Yxz-95-vHl" secondAttribute="bottom" constant="11" id="7rL-k3-Njc"/>
                     <constraint firstAttribute="trailing" secondItem="Yxz-95-vHl" secondAttribute="trailing" constant="10" id="F1b-eD-GtD"/>
@@ -66,8 +67,11 @@
         </tableViewCell>
     </objects>
     <resources>
+        <namedColor name="Dark mode">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="FlashChat Blue">
-            <color red="0.43529411764705883" green="0.70196078431372544" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.43500000238418579" green="0.70200002193450928" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
