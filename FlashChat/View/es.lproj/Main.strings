@@ -3,10 +3,10 @@
 "67C-Ey-AV3.normalTitle" = "Registrarse";
 
 /* Class = "UINavigationItem"; title = "Log In"; ObjectID = "GCy-uw-FP0"; */
-"GCy-uw-FP0.title" = "Inicio Sesion";
+"GCy-uw-FP0.title" = "Iniciar Sesion";
 
 /* Class = "UINavigationItem"; title = "Register"; ObjectID = "IBw-Pb-pcT"; */
-"IBw-Pb-pcT.title" = "Registro";
+"IBw-Pb-pcT.title" = "Registrarse";
 
 /* Class = "UIButton"; normalTitle = "Send"; ObjectID = "JiI-fB-I1v"; */
 "JiI-fB-I1v.normalTitle" = "Enviar";
@@ -33,13 +33,13 @@
 "mz9-8w-6zi.title" = "Desconectarse";
 
 /* Class = "UINavigationItem"; title = "Welcome"; ObjectID = "qIL-hP-GCy"; */
-"qIL-hP-GCy.title" = "Bienvenido/a";
+"We4-e3-PIi.title" = "Bienvenido!";
 
 /* Class = "UIButton"; normalTitle = "Log In"; ObjectID = "rV4-Sa-2Rb"; */
-"rV4-Sa-2Rb.normalTitle" = "Iniciar Sesión";
+"Fdc-Kl-qbI.normalTitle" = "Iniciar Sesión";
 
 /* Class = "UIButton"; normalTitle = "Register"; ObjectID = "uWY-w2-6La"; */
-"uWY-w2-6La.normalTitle" = "Registrarse";
+"UII-Lj-WWb.normalTitle" = "Registrarse";
 
 /* Class = "UITextField"; placeholder = "Password"; ObjectID = "zuQ-XP-4Q7"; */
 "zuQ-XP-4Q7.placeholder" = "Contraseña";
