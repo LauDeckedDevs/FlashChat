@@ -90,25 +90,31 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
 
 
     //MARK: - Send&RecieveFirebase
-    
-    @IBAction func sendPressed(_ sender: AnyObject) {
-        messageTextfield.endEditing(true)
-        sendButton.isEnabled = false
-        sendButton.isHidden = true
         
-        let messagesDB = Database.database().reference().child("Messages")
-        let messagesDictionary = ["Sender": Auth.auth().currentUser?.email, "MessageBody": messageTextfield.text!]
-        
-        messagesDB.childByAutoId().setValue(messagesDictionary) {
-            (error, reference) in
-            if error != nil {
-                print(error!)
-            } else {
-                print("message sent")
-                self.sendButton.isEnabled = true
-                self.sendButton.isHidden = false
-                self.messageTextfield.text = ""
+        @IBAction func sendPressed(_ sender: AnyObject) {
+            if messageTextfield.text != "" {
+                
+            messageTextfield.endEditing(true)
+            sendButton.isEnabled = false
+            sendButton.isHidden = true
+            
+            let messagesDB = Database.database().reference().child("Messages")
+            let messagesDictionary = ["Sender": Auth.auth().currentUser?.email, "MessageBody": messageTextfield.text]
+            
+            messagesDB.childByAutoId().setValue(messagesDictionary) {
+                (error, reference) in
+                if error != nil {
+                    print(error!)
+                } else {
+                    print("message sent")
+                    self.sendButton.isEnabled = true
+                    self.sendButton.isHidden = false
+                    self.messageTextfield.text = ""
+                }
             }
+        } else {
+                print ("ups")
+            
         }
     }
     

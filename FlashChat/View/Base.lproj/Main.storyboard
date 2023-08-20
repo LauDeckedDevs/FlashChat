@@ -4,6 +4,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -315,13 +317,16 @@
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="send"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JiI-fB-I1v">
-                                        <rect key="frame" x="321" y="10" width="29" height="30"/>
+                                        <rect key="frame" x="321" y="9" width="46" height="32"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="29" id="ZSm-he-0Hk"/>
-                                            <constraint firstAttribute="height" constant="30" id="eac-Pu-ehA"/>
+                                            <constraint firstAttribute="width" constant="46" id="ZSm-he-0Hk"/>
+                                            <constraint firstAttribute="height" constant="32" id="eac-Pu-ehA"/>
                                         </constraints>
-                                        <state key="normal" title="Send" image="rectangle.and.pencil.and.ellipsis" catalog="system">
+                                        <color key="tintColor" name="Flashchat Purple"/>
+                                        <state key="normal">
+                                            <color key="titleColor" name="Flashchat Purple"/>
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <imageReference key="image" image="paperplane.fill" catalog="system" symbolScale="large"/>
                                         </state>
                                         <connections>
                                             <action selector="sendPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9e5-46-aXt"/>
@@ -330,12 +335,12 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="JiI-fB-I1v" firstAttribute="top" secondItem="WpY-IA-acB" secondAttribute="top" constant="10" id="1kz-X0-4bm"/>
+                                    <constraint firstItem="JiI-fB-I1v" firstAttribute="top" secondItem="WpY-IA-acB" secondAttribute="top" constant="9" id="1kz-X0-4bm"/>
                                     <constraint firstItem="W4K-YF-skl" firstAttribute="leading" secondItem="WpY-IA-acB" secondAttribute="leading" constant="8" id="LIw-AA-Dk0"/>
                                     <constraint firstItem="W4K-YF-skl" firstAttribute="top" secondItem="WpY-IA-acB" secondAttribute="top" constant="10" id="dTK-mk-kRm"/>
                                     <constraint firstAttribute="height" constant="50" id="dyw-Nc-T3G"/>
                                     <constraint firstItem="JiI-fB-I1v" firstAttribute="leading" secondItem="W4K-YF-skl" secondAttribute="trailing" constant="8" id="ekQ-BF-Rpc"/>
-                                    <constraint firstAttribute="trailing" secondItem="JiI-fB-I1v" secondAttribute="trailing" constant="25" id="oPt-DK-Ply"/>
+                                    <constraint firstAttribute="trailing" secondItem="JiI-fB-I1v" secondAttribute="trailing" constant="8" id="oPt-DK-Ply"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="7eI-kw-TVm" userLabel="Message Table View">
@@ -373,7 +378,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836" y="-16"/>
+            <point key="canvasLocation" x="1836" y="-16.256157635467982"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kGX-IT-aXC">
@@ -407,6 +412,9 @@
     <resources>
         <image name="background-1" width="1184" height="2778"/>
         <image name="logo" width="703" height="720"/>
-        <image name="rectangle.and.pencil.and.ellipsis" catalog="system" width="128" height="80"/>
+        <image name="paperplane.fill" catalog="system" width="128" height="119"/>
+        <namedColor name="Flashchat Purple">
+            <color red="0.75700002908706665" green="0.51800000667572021" blue="0.9100000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
