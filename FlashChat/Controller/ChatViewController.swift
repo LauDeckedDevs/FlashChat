@@ -15,6 +15,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     var messageArray: [Message] = [Message]()
 
     @IBOutlet var heightConstraint: NSLayoutConstraint!
+    @IBOutlet var waveHand: UIButton!
     @IBOutlet var sendButton: UIButton!
     @IBOutlet var messageTextfield: UITextField!
     @IBOutlet var messageTableView: UITableView!
@@ -22,6 +23,8 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     //MARK: - View
     
     override func viewDidLoad() {
+        waveHand.isHidden = false
+        sendButton.isHidden = true
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true)
         messageTableView.delegate = self
@@ -73,7 +76,10 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     //MARK: - textFieldDidBegin
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        UIView.animate(withDuration: 0.5){
+        waveHand.isHidden = true
+        sendButton.isHidden = false
+        
+            UIView.animate(withDuration: 0.5) {
             self.heightConstraint.constant = 360
             self.view.layoutIfNeeded()
         }
@@ -113,8 +119,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
                 }
             }
         } else {
-                print ("ups")
-            
+            print("ups")
         }
     }
     

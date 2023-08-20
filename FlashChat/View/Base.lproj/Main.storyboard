@@ -332,15 +332,33 @@
                                             <action selector="sendPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9e5-46-aXt"/>
                                         </connections>
                                     </button>
+                                    <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dae-92-EmY">
+                                        <rect key="frame" x="321" y="9" width="46" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="2qV-Jt-ysQ"/>
+                                            <constraint firstAttribute="width" constant="46" id="FHw-Ag-yE2"/>
+                                        </constraints>
+                                        <color key="tintColor" name="Flashchat Purple"/>
+                                        <state key="normal">
+                                            <color key="titleColor" name="Flashchat Purple"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <imageReference key="image" image="hand.wave.fill" catalog="system" symbolScale="large"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KXk-Od-7Vm"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="JiI-fB-I1v" firstAttribute="top" secondItem="WpY-IA-acB" secondAttribute="top" constant="9" id="1kz-X0-4bm"/>
+                                    <constraint firstItem="Dae-92-EmY" firstAttribute="top" secondItem="WpY-IA-acB" secondAttribute="top" constant="9" id="L7r-eT-bG4"/>
                                     <constraint firstItem="W4K-YF-skl" firstAttribute="leading" secondItem="WpY-IA-acB" secondAttribute="leading" constant="8" id="LIw-AA-Dk0"/>
                                     <constraint firstItem="W4K-YF-skl" firstAttribute="top" secondItem="WpY-IA-acB" secondAttribute="top" constant="10" id="dTK-mk-kRm"/>
                                     <constraint firstAttribute="height" constant="50" id="dyw-Nc-T3G"/>
                                     <constraint firstItem="JiI-fB-I1v" firstAttribute="leading" secondItem="W4K-YF-skl" secondAttribute="trailing" constant="8" id="ekQ-BF-Rpc"/>
                                     <constraint firstAttribute="trailing" secondItem="JiI-fB-I1v" secondAttribute="trailing" constant="8" id="oPt-DK-Ply"/>
+                                    <constraint firstItem="Dae-92-EmY" firstAttribute="leading" secondItem="W4K-YF-skl" secondAttribute="trailing" constant="8" symbolic="YES" id="sYH-w1-lrv"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="7eI-kw-TVm" userLabel="Message Table View">
@@ -374,6 +392,7 @@
                         <outlet property="messageTableView" destination="7eI-kw-TVm" id="OYq-98-NhQ"/>
                         <outlet property="messageTextfield" destination="W4K-YF-skl" id="rE7-AO-1UD"/>
                         <outlet property="sendButton" destination="JiI-fB-I1v" id="Oxz-hw-PLC"/>
+                        <outlet property="waveHand" destination="Dae-92-EmY" id="ShZ-nE-XKg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -411,6 +430,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="background-1" width="1184" height="2778"/>
+        <image name="hand.wave.fill" catalog="system" width="128" height="128"/>
         <image name="logo" width="703" height="720"/>
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>
         <namedColor name="Flashchat Purple">
