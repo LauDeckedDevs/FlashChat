@@ -89,6 +89,8 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         UIView.animate(withDuration: 0.5){
+            self.sendButton.isHidden = true
+            self.waveHand.isHidden = false
             self.heightConstraint.constant = 50
             self.view.layoutIfNeeded()
         }
@@ -101,8 +103,6 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             if messageTextfield.text != "" {
                 
             messageTextfield.endEditing(true)
-            sendButton.isEnabled = false
-            sendButton.isHidden = true
             
             let messagesDB = Database.database().reference().child("Messages")
             let messagesDictionary = ["Sender": Auth.auth().currentUser?.email, "MessageBody": messageTextfield.text]
@@ -113,8 +113,6 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
                     print(error!)
                 } else {
                     print("message sent")
-                    self.sendButton.isEnabled = true
-                    self.sendButton.isHidden = false
                     self.messageTextfield.text = ""
                 }
             }
