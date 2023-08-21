@@ -286,6 +286,7 @@
                     <navigationItem key="navigationItem" id="OGj-fw-WBv">
                         <barButtonItem key="backBarButtonItem" title=" " id="XDA-WC-eS9"/>
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="mz9-8w-6zi">
+                            <color key="tintColor" name="FlashChat Blue"/>
                             <connections>
                                 <action selector="logOutPressed:" destination="vXZ-lx-hvc" id="AiZ-zI-Rgo"/>
                             </connections>
@@ -419,6 +420,9 @@
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>
         <namedColor name="Dark mode">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FlashChat Blue">
+            <color red="0.43500000238418579" green="0.70200002193450928" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Flashchat Purple">
             <color red="0.75700002908706665" green="0.51800000667572021" blue="0.9100000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
