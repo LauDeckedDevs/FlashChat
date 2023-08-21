@@ -251,7 +251,7 @@ typedef NS_ENUM(NSInteger, FIRAuthInternalErrorCode) {
   FIRAuthInternalErrorCodeMissingAndroidPackageName = FIRAuthPublicErrorCodeFlag |
                                                       FIRAuthErrorCodeMissingAndroidPackageName,
 
-  /** Indicates that the domain specified in the continue URL is not whitelisted in the Firebase
+  /** Indicates that the domain specified in the continue URL is not allowlisted in the Firebase
         console.
    */
   FIRAuthInternalErrorCodeUnauthorizedDomain = FIRAuthPublicErrorCodeFlag |
@@ -476,6 +476,11 @@ typedef NS_ENUM(NSInteger, FIRAuthInternalErrorCode) {
                                                      FIRAuthErrorCodeInvalidDynamicLinkDomain,
 
   FIRAuthInternalErrorCodeMalformedJWT = FIRAuthPublicErrorCodeFlag | FIRAuthErrorCodeMalformedJWT,
+
+  /** Indicates that an authentication blocking cloud function returned an error.
+   */
+  FIRAuthInternalErrorBlockingCloudFunctionError = FIRAuthPublicErrorCodeFlag |
+                                                   FIRAuthErrorCodeBlockingCloudFunctionError,
 
   /** @var FIRAuthInternalErrorCodeRPCRequestEncodingError
       @brief Indicates an error encoding the RPC request.

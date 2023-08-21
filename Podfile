@@ -6,12 +6,16 @@ target 'FlashChat' do
   use_frameworks!
 
   # Pods for FlashChat
-    pod 'Firebase/Analytics'
     pod 'Firebase'
+    pod 'Firebase/Analytics'
     pod 'Firebase/Auth'
     pod 'Firebase/Database'
     pod 'SVProgressHUD'
     pod 'ChameleonFramework'
+    pod 'GoogleSignIn'
+    pod 'MaterialComponents/TextControls+OutlinedTextAreas'
+    pod 'MaterialComponents/TextControls+OutlinedTextFields'
+    pod 'MaterialComponents/TextControls+OutlinedTextFieldsTheming'
 
 end
 
