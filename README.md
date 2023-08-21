@@ -12,3 +12,4 @@ Flahschat is an iOS native group chat app built with Swift 5 in Uikit and using 
 
 # Chat
 <img src="https://user-images.githubusercontent.com/60990368/120936118-7a44ea00-c706-11eb-8aab-ed5b8b4e60c8.png" width=314>
+
