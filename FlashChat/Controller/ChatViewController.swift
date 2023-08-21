@@ -13,7 +13,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     //MARK: - Properties
     
     var messageArray: [Message] = [Message]()
-
+    
     @IBOutlet var heightConstraint: NSLayoutConstraint!
     @IBOutlet var waveHand: UIButton!
     @IBOutlet var sendButton: UIButton!
@@ -23,9 +23,9 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     //MARK: - View
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         waveHand.isHidden = false
         sendButton.isHidden = true
-        super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true)
         messageTableView.delegate = self
         messageTableView.dataSource = self
@@ -41,7 +41,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         messageTableView.separatorStyle = .none
     }
-
+    
     
     //MARK: - TableViewDataSource
     
@@ -50,24 +50,24 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         cell.messageBody.text = messageArray[indexPath.row].messageBody
         cell.senderUsername.text = messageArray[indexPath.row].sender
-            
+        
         
         return cell
     }
-   
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return messageArray.count
     }
     
     
-    //MARK: - tableViewTapped
+    //tableViewTapped
     
     @objc func tableViewTapped() {
         messageTextfield.endEditing(true)
     }
     
-    //MARK: - ConfigureTableView
-
+    //MARK: - TableViewConfig
+    
     func configureTableView() {
         messageTableView.rowHeight = UITableView.automaticDimension
         messageTableView.estimatedRowHeight = 120.0
@@ -79,7 +79,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         waveHand.isHidden = true
         sendButton.isHidden = false
         
-            UIView.animate(withDuration: 0.5) {
+        UIView.animate(withDuration: 0.5) {
             self.heightConstraint.constant = 360
             self.view.layoutIfNeeded()
         }
@@ -95,13 +95,15 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.view.layoutIfNeeded()
         }
     }
-
+}
 
     //MARK: - Send&RecieveFirebase
-        
-        @IBAction func sendPressed(_ sender: AnyObject) {
-            if messageTextfield.text != "" {
-                
+
+extension ChatViewController {
+    
+    @IBAction func sendPressed(_ sender: AnyObject) {
+        if messageTextfield.text != "" {
+            
             messageTextfield.endEditing(true)
             
             let messagesDB = Database.database().reference().child("Messages")
@@ -120,8 +122,11 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             print("ups")
         }
     }
+}
     
     //MARK: - RecieveMessages
+    
+extension ChatViewController {
     
     func retrieveMessages() {
         let messageDB = Database.database().reference().child("Messages")
@@ -140,10 +145,12 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.messageTableView.reloadData()
         }
     }
+}
     
     //MARK: - LogOutProcess
     
-    
+extension ChatViewController {
+
     @IBAction func logOutPressed(_ sender: AnyObject) {
         do {
        try Auth.auth().signOut()
