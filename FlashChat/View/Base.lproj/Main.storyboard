@@ -330,7 +330,7 @@
             </objects>
             <point key="canvasLocation" x="-350" y="11"/>
         </scene>
-        <!--Welcome-->
+        <!--Welcome!-->
         <scene sceneID="RAb-5S-gXO">
             <objects>
                 <viewController storyboardIdentifier="welcomeVC" id="6Dc-1D-EIp" customClass="WelcomeViewController" customModule="FlashChat" customModuleProvider="target" sceneMemberID="viewController">
@@ -400,7 +400,7 @@
                             <constraint firstAttribute="trailing" secondItem="Fdc-Kl-qbI" secondAttribute="trailing" id="dvL-zq-mID"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Welcome" id="We4-e3-PIi"/>
+                    <navigationItem key="navigationItem" title="Welcome!" id="We4-e3-PIi"/>
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="push" identifier="goToChat" id="P0b-Cd-AgO"/>
                     </connections>
@@ -411,7 +411,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rRW-Qd-PQi"/>
+        <segue reference="P0b-Cd-AgO"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="background-1" width="1184" height="2778"/>
